@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển hướng...</title>
+
+    <!-- 1. Xóa Referer để giả lập hành vi dán link trực tiếp vào trình duyệt -->
+    <meta name="referrer" content="no-referrer">
+
+    <!-- 2. Thẻ meta refresh chuẩn hóa &amp; để tránh lỗi ngắt link -->
+    <meta http-equiv="refresh" content="0; url=https://sp.funtv.ai/share?st=app_share&amp;lang=vi&amp;channel_id=2931212&amp;r_id=2931212">
+
+    <script>
+        // Sử dụng href kèm thẻ no-referrer đã khai báo ở trên
+        window.location.href = "https://sp.funtv.ai/share?st=app_share&lang=vi&channel_id=2931212&r_id=2931212";
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        .box {
+            text-align: center;
+            padding: 24px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 16px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Đang chuyển hướng đến trang...</p>
+        <!-- rel="noreferrer" đảm bảo khi bấm thủ công cũng không gửi nguồn web cũ -->
+        <a href="https://sp.funtv.ai/share?st=app_share&lang=vi&channel_id=2931212&r_id=2931212" rel="noreferrer">Nhấn vào đây nếu không tự chuyển</a>
+    </div>
+</body>
+</html>
